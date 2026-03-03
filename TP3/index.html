@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> TP3 Formulaire </title>
+		<style>
+			.formulaire{
+				border : solid;
+				border-color : rgb(0, 110, 255);
+				background-color : white;
+				padding : 30px 30px 30px 30px;
+				margin-top : 100px;
+				margin-left: auto;
+				margin-right :auto;
+				width : 350px
+			}
+			.error{
+				color : red;
+			}
+			.etoile{
+				color : red;
+			}
+			div{
+				display : block;
+				margin-top : 8px;
+			}
+			.div1{
+				display : inline-block;
+				padding : 10px;
+				width : 80px;
+			}	
+			.division{
+				display : inline-block;
+			}
+			.divi{
+				display : inline-block;
+
+			}
+			.suscribe{
+				background-color : rgb(0, 110, 255);
+				color : white;
+				padding : 10px;
+				border-radius : 8px;
+				font-size : larger;
+				font-weight : bold;
+				border : none;
+				cursor : pointer;
+				margin-top : 20px;
+				width : 300px;
+				transition : opacity 0.15s;
+			}
+
+			.suscribe:hover{
+				opacity : 0.9;
+			}
+			.suscribe:active{
+				opacity : 0.5;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<section class="formulaire">
+			<h1>Formulaire dinscription au cours de PWEB</h1>
+			<p>Ce formulaire est conçu dans le cadre du TP de cours de Programmation Web ISILA. 
+				Remplissez toutes les cases possibles.
+			</p>
+			<p>
+				Les champs marqués par <span class="etoile">*</span> sont <strong>obligatoires</strong>. 
+			</p>
+			<form>
+				<div>
+					<div class="div1">
+						<label for = "Nom">Nom : </label>
+					</div>
+					<div class="division">
+						<input class ="focus" type = "text" id = "Nom" placeholder = "Saisissez votre nom" 
+						name= "Nom" :focus required ="required" autocorect ="off">
+						<span class= "error">*</span>
+					</div>
+				</div>
+				<div>
+					<div class="div1">
+						<label for = "Prenom"> Prénom: </label>
+					</div>
+					<div class="division">
+						<input type = "text" id = "Prenom" name= "Prenom"
+						placeholder = "Saisissez votre prenom" autocorect ="off">
+					</div>
+				</div>
+				<div>
+					<div class="div1">
+						<label for = "email"> email : </label>
+					</div>
+					<div class="division">
+						<input type = "text" id = "email" name= "email"
+						placeholder = "Saisissez votre email" autocorect ="off">
+					</div>
+				</div>
+				<div>
+					<div class="div1">
+						<label for = "Age">Âge : </label>
+					</div>
+					<div class="division">
+						<input type = "number" id = "Age" name= "Age"
+						placeholder = "Saisissez votre âge" autocorect ="off">
+					</div>
+					
+				</div>
+				<div>
+					<div class="div1">
+						<label for = "Mot de passe" > Mot de passe :</label>
+					</div>
+					<div class="division">
+						<input type = "password" id = "Mot de passe" name= "passeword"
+						placeholder = "Saisissez votre mot de passe" required="required" autocorect ="off">
+						<span class= "error">*</span>
+					</div>
+				</div>
+				<div>
+					<div class="div1">
+						<label for = "Confirmation de mot de passe">Confirmez : </label>
+					</div>
+					<div class="division">
+						<input type="password" id="Confirmation de mot de passe" name= "ConfirmationPassword"
+						placeholder = "Confirmez votre mot de passe" required="required" autocorect ="off">
+						<span class= "error">*</span>
+					</div>
+				</div>
+				
+				<input type= "submit" class= "suscribe" value="Envoyer">
+			
+			</form>
+		</section>
+		
+	</body>
+</html>
